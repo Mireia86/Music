@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<base href="/"> <!--es para q en vez del # ponga la barra-->
+	<meta charset="utf-8">
+	<title>I forgot everything!</title>
+	<link rel="stylesheet" type="text/css" href="./stylesheets/bulma.min.css">
+</head>
+<body>
+	<header header-directive></header>
+
+	<section>
+		<ng-view></ng-view>
+	</section>
+	<br>
+	<hr>
+	<footer footer-directive class="footer"></footer>
+
+	<script src="./lib/angular/angular.min.js"></script>
+	<script src="./lib/angular/angular-resource.min.js"></script>
+	<script src="./lib/angular/angular-route.min.js"></script>
+	<script src="./scripts/app.js"></script>
+	<script src="./scripts/controllers.js"></script>
+	<script src="./scripts/directives.js"></script>
+	<script src="./scripts/services.js"></script>
+</body>
+	
+	
+</html>
